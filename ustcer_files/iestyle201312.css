@@ -1,0 +1,576 @@
+DIV {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 100%; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 100%; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 100%; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 100%; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 100%; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+INPUT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: inherit; FONT-SIZE: 100%; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 100%; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+A IMG {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+#headlink {
+	MARGIN: 0px auto;  /*BACKGROUND: #f3f3f3; */HEIGHT: 115px; COLOR: #014
+}
+#headlink .timedate {
+	MARGIN-TOP: -60px; WIDTH: 200px; FLOAT: right
+}
+.timedate {
+	TEXT-ALIGN: left; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: right; FONT-SIZE: 90%; FONT-WEIGHT: bold
+}
+
+.timedate LI {
+	MARGIN-TOP: 30px !important; FLOAT: left
+}
+/*#logopart {
+	MARGIN: 0px; WIDTH: 880px; BACKGROUND: #f3f3f3 no-repeat right bottom; FLOAT: left; HEIGHT: 120px
+}*/
+#logopart A {
+	COLOR: #014
+}
+#logopart{
+	margin: 16px;
+	vertical-align: middle;
+}
+#logopart img{
+	vertical-align: middle;
+	padding-bottom: 18px;
+}
+marquee{
+	    margin: 10px;
+}
+.smile{
+	display: inline-block;
+	position: relative;
+}
+#logopart:hover .smile{ 
+	-webkit-animation-name: smile-left-go; -webkit-animation-duration: 3s; 
+	-webkit-animation-iteration-count: 18; 
+	-webkit-animation-direction: alternate; 
+}  
+@-webkit-keyframes 'smile-left-go' {
+  	100% {
+	 	margin-left: 500px; 
+	}
+}
+.top-smile{
+	width: 40px;
+    height: 5px;
+    top: -2px;
+    position: absolute;
+    border-top-left-radius: 15000px;
+	border-top-right-radius: 15000px;
+}
+#logopart:hover .top-smile{ 
+	-webkit-animation-name: smile-top; -webkit-animation-duration: 3.6s; 
+	-webkit-animation-iteration-count: 18; 
+	-webkit-animation-direction: alternate; 
+}  
+@-webkit-keyframes 'smile-top' {
+  	100% {
+  		width: 25px;
+  		height: 12px;
+  		top: -5px;
+	 	background: #80baf7;
+	    border-top-left-radius: 15px;
+	    border-top-right-radius: 15px;
+	}
+}
+.smile-left{
+	left: -10px;
+}
+.smile-right{
+	right: -10px;
+}
+#logopart:hover img{ 
+	-webkit-animation-name: wobble; -webkit-animation-duration: 3s; 
+	-webkit-animation-iteration-count: 18; 
+	-webkit-animation-direction: alternate; 
+} 
+@-webkit-keyframes 'wobble' {
+/*  30% {
+  margin-left: 100px; 
+  background: #014da1; 
+  }*/
+/*  70% {
+  margin-left: 400px; 
+  background: #014da1; 
+  }*/
+  100% {
+  	/*margin-left: 500px; */
+    background: #80baf7;
+    border-bottom-right-radius: 81px;
+    border-bottom-left-radius: 81px;
+  } 
+}
+#logopart span{
+	font-size: 32px;
+	display: inline-block;
+}
+#menupart {
+	MARGIN: 0px auto; WIDTH: 1120px; BACKGROUND: url(http://en.ustc.edu.cn/images/menubg20131.png) repeat-x; HEIGHT: 58px
+}
+#menupart .menuNav {
+	Z-INDEX: 1000; POSITION: relative; TEXT-ALIGN: left; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px auto; PADDING-LEFT: 0px; WIDTH: 1120px; PADDING-RIGHT: 0px; FLOAT: none; FONT-SIZE: 100%; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+.menuNav A {
+	DISPLAY: block; TEXT-DECORATION: none
+}
+.menuNav UL {
+	Z-INDEX: 1000; PADDING-BOTTOM: 0px; LINE-HEIGHT: 50px; TEXT-TRANSFORM: uppercase; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.menuNav UL LI {
+	POSITION: relative; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px auto; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(http://en.ustc.edu.cn/images/navbg20131.png) no-repeat right center; FLOAT: left; HEIGHT: 52px; PADDING-TOP: 5px
+}
+.menuNav UL LI A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; DISPLAY: block; COLOR: #014; PADDING-TOP: 0px
+}
+.menuNav UL LI A:hover {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; DISPLAY: block; BACKGROUND: #fff; COLOR: #014da1; TEXT-DECORATION: underline; PADDING-TOP: 0px
+}
+.menuNav LI UL {
+	Z-INDEX: 9999; BORDER-BOTTOM: #b2cfef 1px solid; POSITION: absolute; TEXT-ALIGN: left; FILTER: alpha(opacity=92); BORDER-LEFT: #b2cfef 1px solid; LINE-HEIGHT: 15px; LIST-STYLE-TYPE: none; WIDTH: 240px; HEIGHT: auto; BORDER-TOP: #b2cfef 1px solid; BORDER-RIGHT: #b2cfef 1px solid; LEFT: -9999px; opacity: 0.92
+}
+.menuNav LI UL LI {
+	PADDING-BOTTOM: 0px; TEXT-TRANSFORM: none; PADDING-LEFT: 0px; WIDTH: 240px; PADDING-RIGHT: 0px; BACKGROUND: url(http://en.ustc.edu.cn/images/menusecbg20131.png) #fff repeat-x; FLOAT: left; HEIGHT: auto; MARGIN-LEFT: 0px; FONT-SIZE: 90%; PADDING-TOP: 1px
+}
+.menuNav LI UL LI.second {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-LEFT: 0px; PADDING-TOP: 1px
+}
+.menuNav LI UL LI#secondcol {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #142458 2px solid; PADDING-TOP: 2px
+}
+.menuNav LI UL A {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 3px; PADDING-LEFT: 10px; WIDTH: 230px; PADDING-RIGHT: 0px; DISPLAY: block; HEIGHT: auto; PADDING-TOP: 3px
+}
+.menuNav LI UL A:link {
+	TEXT-ALIGN: left; COLOR: #014; TEXT-DECORATION: none
+}
+.menuNav LI UL A:visited {
+	TEXT-ALIGN: left; COLOR: #142458; TEXT-DECORATION: none
+}
+.menuNav LI UL A:hover {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 3px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: #c33; COLOR: #e9eef2; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.menuNav LI:hover UL {
+	TOP: 55px; LEFT: 0px
+}
+.menuNav LI.sfhover UL {
+	TOP: 55px; LEFT: 0px
+}
+.menuNav UL LI.lastcol {
+	POSITION: relative; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px auto; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; HEIGHT: 50px; PADDING-TOP: 2px
+}
+.menuNav UL LI.lastcol A {
+	POSITION: relative; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px auto; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; HEIGHT: 50px; PADDING-TOP: 2px
+}
+.menuNav LI SPAN.picmenu {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 86px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(http://en.ustc.edu.cn/images/menucnhome12.png) no-repeat center center; FLOAT: left; HEIGHT: 50px; PADDING-TOP: 0px
+}
+.menuNav LI SPAN.picmenu:hover {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 86px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(http://en.ustc.edu.cn/images/menucnhome21.png) no-repeat center center; FLOAT: left; HEIGHT: 50px; PADDING-TOP: 0px
+}
+#bodypart {
+	BORDER-BOTTOM: #598bc2 1px solid; BORDER-LEFT: #598bc2 1px solid; MARGIN: 0px auto; WIDTH: 1118px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: none; CLEAR: both; BORDER-TOP: #598bc2 1px solid; BORDER-RIGHT: #598bc2 1px solid; border: 0px; -moz-border-radius: 5px 5px 5px 5px
+
+}
+#newspart {
+	PADDING-BOTTOM: 0px; MARGIN: 19px auto; PADDING-LEFT: 0px; WIDTH: 1080px; PADDING-RIGHT: 0px; FLOAT: none; CLEAR: both; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+#newspart .focusNav {
+	Z-INDEX: 1000; TEXT-ALIGN: left; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px auto; PADDING-LEFT: 0px; WIDTH: 1080px; PADDING-RIGHT: 0px; DISPLAY: inline; FLOAT: left; FONT-WEIGHT: bold; PADDING-TOP: 0px; 
+}
+.focusNav A {
+	DISPLAY: block; TEXT-DECORATION: none
+}
+.focusNav {
+	Z-INDEX: 1000; TEXT-ALIGN: left; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: none; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+.focusNav .randomimage {
+	POSITION: relative; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.randomimage {
+	WIDTH: 680px; FLOAT: left; HEIGHT: 328px !important
+}
+.randomimage {
+	POSITION: relative
+}
+.randomimage .slideimg {
+	BORDER-BOTTOM: #cccccc 1px solid; POSITION: absolute; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 678px; PADDING-RIGHT: 0px; BACKGROUND: #598bc2 no-repeat; HEIGHT: 326px; OVERFLOW: auto; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 0px; TOP: 0px; LEFT: 0px
+}
+.randomimage .slideimg UL {
+	POSITION: absolute; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 9999px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; TOP: 0px; LEFT: 0px
+}
+.randomimage UL LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 678px; PADDING-RIGHT: 0px; DISPLAY: block; FLOAT: left; HEIGHT: 326px; PADDING-TOP: 0px
+}
+.randomimage UL LI DIV.slidewords {
+	POSITION: relative; FILTER: alpha(opacity=80); PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #cccccc; MARGIN: 0px; PADDING-LEFT: 20px; WIDTH: auto; PADDING-RIGHT: 5px; FONT-FAMILY: "Times New Roman",sans-serif; HEIGHT: 25px; COLOR: #000; OVERFLOW: visible; PADDING-TOP: 2px; TOP: -30px; opacity: 0.80
+}
+.randomimage UL LI DIV.slidewords H2 {
+	LINE-HEIGHT: 2; MARGIN: 0px; DISPLAY: block; FONT-SIZE: 106%; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.randomimage UL LI DIV.slidewords A {
+	COLOR: #014; TEXT-DECORATION: none
+}
+.randomimage UL LI DIV.slidewords A:hover {
+	COLOR: #0c0
+}
+.randomimage UL LI A IMG {
+	BORDER-BOTTOM-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none
+}
+.randomimage UL LI A IMG {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 1px; PADDING-RIGHT: 0px; PADDING-TOP: 1px
+}
+.randomimage UL LI IMG {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 1px; PADDING-RIGHT: 0px; PADDING-TOP: 1px
+}
+.play-football {
+    position: absolute;
+    bottom: -65px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.randomimage #slideNav {
+	WIDTH: 658px; POSITION: absolute; TOP: 307px;  TEXT-ALIGN: right; OVERFLOW: hidden; 
+}
+#slideNav A {
+	WIDTH: 8px; border-radius: 50%; -ms-border-radius:4px; FILTER: alpha(opacity=80); DISPLAY: inline-block; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; BACKGROUND: #fff;  PADDING-BOTTOM: 2px; PADDING-TOP: 2px; MARGIN: 0px 7px 0px 7px; HEIGHT: 4px; TEXT-ALIGN: center; vertical-align: middle; TEXT-DECORATION: none
+}
+#slideNav A:hover {
+	BACKGROUND: #ac8c2f; FILTER: alpha(opacity=80); WIDTH: 12px; border-radius: 50%; -ms-border-radius: 6px; FILTER: alpha(opacity=80); DISPLAY: inline-block; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold;   PADDING-BOTTOM: 2px; PADDING-TOP: 2px; MARGIN: 0px 5px 0px 5px; HEIGHT: 8px; TEXT-ALIGN: center;vertical-align: middle; TEXT-DECORATION: none
+}
+#slideNav A.cur:hover {
+	BACKGROUND: #ac8c2f; FILTER: alpha(opacity=80); 
+}
+#slideNav A.cur {
+	BACKGROUND: #ac8c2f; FILTER: alpha(opacity=80); WIDTH: 12px; border-radius: 50%; FILTER: alpha(opacity=80); DISPLAY: inline-block; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold;   PADDING-BOTTOM: 2px; PADDING-TOP: 2px; MARGIN: 0px 5px 0px 5px; HEIGHT: 8px; TEXT-ALIGN: center;vertical-align: middle; TEXT-DECORATION: none
+}
+.randomimage .arrow {
+	POSITION: absolute; FILTER: alpha(opacity=60); TEXT-INDENT: -9999px; WIDTH: 26px; DISPLAY: block; HEIGHT: 26px; CURSOR: pointer; TOP: 140px; LEFT: 2px; opacity: 0.60
+}
+.randomimage .forward {
+	LEFT: 652px
+}
+.randomimage .back {
+	
+}
+.focusNav UL LI.toutiao {
+	PADDING-BOTTOM: 0px; MARGIN: 0px;  PADDING-LEFT: 0px; WIDTH: 400px; PADDING-RIGHT: 0px; DISPLAY: block; FLOAT: left; HEIGHT: 328px; PADDING-TOP: 0px
+}
+.focusNav UL LI.toutiao DIV.toutiaowords {
+	POSITION: relative;  PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 400px; PADDING-RIGHT: 0px; FONT-FAMILY: "Times New Roman",sans-serif;  FLOAT: left; HEIGHT: 324px; COLOR: #000; OVERFLOW: visible; PADDING-TOP: 0px; opacity: 0.80
+}
+.focusNav UL LI.toutiao DIV.toutiaowords H2 {
+	MARGIN: 20px 25px; DISPLAY: block; FONT-SIZE: 130%; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.focusNav UL LI DIV.toutiaowords A {
+	COLOR: #000; TEXT-DECORATION: underline
+}
+.focusNav UL LI DIV.toutiaowords A:hover {
+	COLOR: #0c0; TEXT-DECORATION: underline
+}
+.focusNav UL LI.toutiao DIV.toutiaowords P {
+	MARGIN: 10px 25px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 110%; OVERFLOW: hidden
+}
+.focusNav UL LI.toutiao DIV.toutiaowords .slidemore {
+	POSITION: absolute; MARGIN: 10px 25px 0px; WIDTH: 370px; BOTTOM: 5px; FLOAT: right; OVERFLOW: hidden; BORDER-TOP: #bcd 1px dotted
+}
+.focusNav UL LI.toutiao DIV.toutiaowords .slidemore {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Franklin Gothic Medium","Arial Narrow Bold",Arial,sans-serif; FONT-SIZE: 90%; PADDING-TOP: 5px
+}
+
+.focusNav .focuswords {
+	POSITION: relative; MARGIN: 20px 0px 0px 0px ; WIDTH: 1080px; DISPLAY: inline; FLOAT: left
+}
+
+.focuswords UL {
+	MARGIN-LEFT: 19px
+}
+.focuswords LI {
+	POSITION: relative; TEXT-ALIGN: center; MARGIN: 0px; WIDTH: 120px; BACKGROUND: #17a2b7; FLOAT: left; HEIGHT: 66px; FONT-SIZE: 100%; OVERFLOW: hidden
+}
+.focuswords LI A:link {
+	PADDING-BOTTOM: 2px; LINE-HEIGHT: 1.3; PADDING-LEFT: 2px; WIDTH: 116px; PADDING-RIGHT: 2px; DISPLAY: block; FONT-FAMILY: "Georgia",Arial,sans-serif; VISIBILITY: hidden; COLOR: #000; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.focuswords LI A:visited {
+	PADDING-BOTTOM: 2px; LINE-HEIGHT: 1.3; PADDING-LEFT: 2px; WIDTH: 116px; PADDING-RIGHT: 2px; DISPLAY: block; FONT-FAMILY: "Georgia",Arial,sans-serif; VISIBILITY: hidden; COLOR: #000; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.focuswords LI.li_3 {
+	WIDTH: 240px; BACKGROUND: #53aecf; FONT-SIZE: 100%; FONT-WEIGHT: bold
+}
+.focuswords LI.li_6 {
+	WIDTH: 240px; BACKGROUND: #53aecf; FONT-SIZE: 100%; FONT-WEIGHT: bold
+}
+.focuswords LI.li_8 {
+	WIDTH: 240px; BACKGROUND: #53aecf; FONT-SIZE: 100%; FONT-WEIGHT: bold
+}
+.focuswords LI.li_9 {
+	WIDTH: 240px; BACKGROUND: #53aecf; FONT-SIZE: 100%; FONT-WEIGHT: bold
+}
+.focuswords LI.li_12 {
+	WIDTH: 240px; BACKGROUND: #53aecf; FONT-SIZE: 100%; FONT-WEIGHT: bold
+}
+.focuswords LI.li_3 A:link {
+	WIDTH: 236px
+}
+.focuswords LI.li_6 A:link {
+	WIDTH: 236px
+}
+.focuswords LI.li_8 A:link {
+	WIDTH: 236px
+}
+.focuswords LI.li_9 A:link {
+	WIDTH: 236px
+}
+.focuswords LI.li_12 A:link {
+	WIDTH: 236px
+}
+.focuswords LI.li_3 A:visited {
+	WIDTH: 236px
+}
+.focuswords LI.li_6 A:visited {
+	WIDTH: 236px
+}
+.focuswords LI.li_8 A:visited {
+	WIDTH: 236px
+}
+.focuswords LI.li_9 A:visited {
+	WIDTH: 236px
+}
+.focuswords LI.li_12 A:visited {
+	WIDTH: 236px
+}
+.focuswords LI.li_12 {
+	MARGIN-RIGHT: 0px
+}
+.focuswords LI.li_blue_1 {
+	BACKGROUND: #53aecf
+}
+.focuswords LI.li_blue_2 {
+	BACKGROUND: #00c0e1
+}
+.focuswords LI.li_blue_3 {
+	BACKGROUND: #0355c1
+}
+.focuswords LI.li_blue_4 {
+	BACKGROUND: #1396e8
+}
+.focuswords LI.li_green {
+	BACKGROUND: #88e57a
+}
+.focuswords LI.li_red {
+	BACKGROUND: #993030
+}
+.focuswords LI.li_ore {
+	BACKGROUND: #f59e5c
+}
+.focuswords LI.li_color_hove {
+	BACKGROUND: #055c6f
+}
+.focuswords LI A.detail {
+	POSITION: absolute; FILTER: progid:DXImageTransform.Microsoft.gradient(enabled = 'true',startColorstr = '#4c000000',endColorstr = '#4c000000'); DISPLAY: block; HEIGHT: 66px; VISIBILITY: visible; TOP: 66px; LEFT: 0px
+}
+.focuswords LI A.detail IMG {
+	POSITION: absolute; FILTER: progid:DXImageTransform.Microsoft.gradient(enabled = 'true',startColorstr = '#4c000000',endColorstr = '#4c000000'); DISPLAY: block; HEIGHT: 66px; VISIBILITY: visible; TOP: 66px; LEFT: 0px
+}
+.newslist {
+	MARGIN: 20px 0px 0px; WIDTH: 798px; DISPLAY: inline; BACKGROUND: url(http://en.ustc.edu.cn/images/mainbg201311.png) #fff repeat-x; FLOAT: left; HEIGHT: 800px; OVERFLOW: hidden
+}
+.newslist .newshead H2 {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; COLOR: #014; FONT-SIZE: 110%; FONT-WEIGHT: bold; PADDING-TOP: 20px
+}
+.newslist .newshead A:hover H2 {
+	COLOR: #0c0; TEXT-DECORATION: underline
+}
+.newslist .newshead {
+	BORDER-BOTTOM: #014083 2px solid; WIDTH: 758px; DISPLAY: inline; FLOAT: left; MARGIN-LEFT: 20px
+}
+.newslist A {
+	COLOR: #014da1; TEXT-DECORATION: none
+}
+.newslist IMG {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 0px
+}
+.newslist .listpart {
+	DISPLAY: inline; FLOAT: left; OVERFLOW: hidden
+}
+.listpart {
+	MARGIN: 0px; WIDTH: 390px
+}
+.listpart UL LI {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.listpart UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN-TOP: 5px; PADDING-LEFT: 0px; WIDTH: 380px; PADDING-RIGHT: 0px; MARGIN-LEFT: 15px; PADDING-TOP: 0px
+}
+.listpart LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; COLOR: #142458; PADDING-TOP: 5px
+}
+.listpart LI DIV.news-pic {
+	BORDER-BOTTOM: #dbd6d6 1px solid; BORDER-LEFT: #dbd6d6 1px solid; MARGIN-TOP: 5px; WIDTH: 104px; DISPLAY: inline; BACKGROUND: #fff; FLOAT: left; HEIGHT: 79px; BORDER-TOP: #dbd6d6 1px solid; BORDER-RIGHT: #dbd6d6 1px solid;
+}
+.listpart LI DIV.news-abstr {
+	MARGIN-TOP: 5px; WIDTH: 250px; DISPLAY: inline; MARGIN-BOTTOM: 0px; FLOAT: left; HEIGHT: 85px; MARGIN-LEFT: 8px
+}
+.listpart LI {
+	BORDER-BOTTOM: #bdc 1px solid; LIST-STYLE-TYPE: none; MARGIN: 5px; WIDTH: 370px !important; DISPLAY: block; OVERFLOW: hidden
+}
+.listpart IMG {
+	LIST-STYLE-TYPE: none; MARGIN-TOP: 0px
+}
+.listpart IMG {
+	WIDTH: 100px; HEIGHT: 75px
+}
+.listpart IMG {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 2px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 2px
+}
+.listpart A {
+	LINE-HEIGHT: 1.2; COLOR: #142458; FONT-WEIGHT: bold
+}
+.listpart UL A:hover {
+	COLOR: #0c0
+}
+.listpart UL SPAN {
+	MARGIN-TOP: 0.2em
+}
+.listpart UL SPAN.headline {
+	LINE-HEIGHT: 1.6; DISPLAY: block; FONT-FAMILY: "Georgia",Arial,sans-serif; FONT-SIZE: 100%; FONT-WEIGHT: bold
+}
+.listpart UL SPAN.date {
+	TEXT-ALIGN: right; LINE-HEIGHT: 1; MARGIN: 0px; DISPLAY: inline; COLOR: #4c4c4c; FONT-SIZE: 90%
+}
+.listpart UL SPAN.description {
+	LINE-HEIGHT: 1.3; DISPLAY: block; COLOR: #000; FONT-SIZE: 96%
+}
+.listpart LI P {
+	PADDING-LEFT: 5px
+}
+.listpart LI A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #000; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+.listpart LI A:hover {
+	BORDER-BOTTOM: #0c0 1px solid; COLOR: #0c0; FONT-SIZE: 100%
+}
+.listpart LI.morenews {
+	TEXT-ALIGN: right; BORDER-RIGHT-WIDTH: 0px; FLOAT: right; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 16px; FONT-SIZE: 90%; BORDER-LEFT-WIDTH: 0px; FONT-WEIGHT: bold
+}
+.listpart LI.morenews A {
+	COLOR: #014da1
+}
+.listpart LI.morenews A:hover {
+	COLOR: #0c0
+}
+.focuspart {
+	MARGIN: 20px 0px 0px; WIDTH: 282px; DISPLAY: inline; BACKGROUND: url(http://en.ustc.edu.cn/images/mainbg201311.png) #fff repeat-x; FLOAT: left; HEIGHT: 800px
+}
+.focuspart .focushead H2 {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; COLOR: #014; FONT-SIZE: 110%; FONT-WEIGHT: bold; PADDING-TOP: 20px
+}
+.focuspart .focushead A:hover H2 {
+	COLOR: #0c0; TEXT-DECORATION: underline
+}
+.focuspart .focushead A {
+	COLOR: #0c0; TEXT-DECORATION: none
+}
+.focuspart .focushead {
+	BORDER-BOTTOM: #014083 2px solid; WIDTH: 262px; DISPLAY: inline; FLOAT: left; MARGIN-LEFT: 0px
+}
+.focuspart .focuscol {
+	BORDER-BOTTOM: #014da1 2px solid; MARGIN: 0px; WIDTH: 262px; FLOAT: left; COLOR: #142458; OVERFLOW: hidden
+}
+.focuspart .focuscol IMG {
+	PADDING-LEFT: 0px; WIDTH: 262px; HEIGHT: 100px
+}
+.focuspart .focuscol A:hover {
+	COLOR: #0c0
+}
+.focuspart .focuscol A {
+	COLOR: #014; TEXT-DECORATION: none
+}
+.focuspart .focuscol H3 A {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; COLOR: #014; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.focuspart .focuscol H3 A:hover {
+	TEXT-DECORATION: underline
+}
+.focuspart .focuscol H3 {
+	MARGIN: 2px 0px; FONT-WEIGHT: bold
+}
+.focuspart .focuscol P {
+	BORDER-BOTTOM: #014083 1px dotted; PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+focuspart .focuscol H4 A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #014da1; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.focuspart .focuscol H4 A:hover {
+	COLOR: #0c0; TEXT-DECORATION: underline
+}
+.focuspart .focuscol H4 {
+	TEXT-ALIGN: right; FONT-SIZE: 90%; MARGIN: 5px 0px; FONT-WEIGHT: bold
+}
+.focuspart .focuscol P.events {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Franklin Gothic Medium","Arial Narrow Bold",Arial,sans-serif; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.focuspart .focuscol H4.events A {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #014da1; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.focuspart .focuscol H4.events A:hover {
+	COLOR: #0c0; TEXT-DECORATION: underline
+}
+.focuspart .focuscol H4.events {
+	TEXT-ALIGN: left;  FONT-SIZE: 90%; FONT-WEIGHT: normal
+}
+.focuspart .focuscol H4.moreevents A {
+	COLOR: #014da1; TEXT-DECORATION: none
+}
+.focuspart .focuscol H4.moreevents A:hover {
+	COLOR: #0c0; TEXT-DECORATION: underline
+}
+.focuspart .focuscol H4.moreevents {
+	TEXT-ALIGN: right; FONT-SIZE: 90%; FONT-WEIGHT: bold
+}
+#footpart {
+	MARGIN: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: none; CLEAR: both; FONT-SIZE: 90%
+}
+#footlink A {
+	COLOR: #000
+}
+#footlink A:hover {
+	COLOR: #0c0
+}
+#footlink {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 10px; MARGIN: 0px auto; PADDING-LEFT: 0px; WIDTH: 1120px; PADDING-RIGHT: 0px; FONT-SIZE: 90%; BORDER-TOP: #014 1px solid; PADDING-TOP: 10px
+}
+#footlink UL LI {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; PADDING-LEFT: 10px; PADDING-RIGHT: 20px; DISPLAY: inline; PADDING-TOP: 0px
+}
+#footlink UL {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#footlink P {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; DISPLAY: block; COLOR: #000
+}
