@@ -116,18 +116,19 @@ function deviceMotionHandler(eventData) {
 　　　　z = acceleration.z;   
   
 　　　　var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;   
-  
+        var oneShake = '';
 　　　　if (speed > SHAKE_THRESHOLD) {   
 　　　　　　// TODO:在此处可以实现摇一摇之后所要进行的数据逻辑操作  
+            clearTimeout(oneShake);
 　　　　　　count++;  
 　　　　　　$("#yaoyiyaoyes").hide();  
 　　　　　　$("#yaoyiyaoresult").show();  
 // 　　　　　　$("#yaoyiyaoresult").html("摇到了!第" + count + "个了！");
 　　　　　　$("#yaoyiyaoresult").html("摇到了! 就该他写了！");
             $('#start').trigger('click');
-            setTimeout(function(){
+            oneShake = setTimeout(function(){
                 $('#start').trigger('click');
-            },2000)
+            },3000)
 　　　　}  
   
 　　　　last_x = x;   
