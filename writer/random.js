@@ -22,7 +22,7 @@
                     food = listNew[r - 1];
                 if (r > m ) {
                     lablePeople = 1;
-                    if (r == m-1) {
+                    if (r == m + 1) {
                         lablePeople = 2;
                     }
                 }else{
