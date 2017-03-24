@@ -43,7 +43,7 @@
             run = 1;
         } else {
             if (lablePeople) {
-                heading.html("好棒，你太幸运了，为庆祝国足大胜，"+food+" 就任由你支配了！");
+                heading.html("好棒，你太幸运了，<b>为庆祝国足大胜，</b>"+food+" 就任由你支配了！");
                 lablePeople = false;
             }else{
                 heading.html("谁写？谁写呢？就他了吧！");
