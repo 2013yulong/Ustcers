@@ -43,7 +43,7 @@
             run = 1;
         } else {
             if (lablePeople) {
-                heading.html(food+"！她会写战报么？那好吧，<b>为庆祝国足大胜，</b>"+" 下次你踢球，就让她给你当啦啦队了！");
+                heading.html(food+"！她会写战报么？会写么？那好吧，<b>为庆祝国足大胜，</b>"+" 下次你踢球，就让她给你当啦啦队了！");
                 lablePeople = false;
             }else{
                 heading.html("谁写？谁写呢？就他了吧！");
