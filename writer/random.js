@@ -1,16 +1,30 @@
     $(function () {
     var run = 0,
-        heading = $("h1"),
-        timer;
-
+        heading = $(".middleSay"),
+        timer,
+        food,
+        lablePeople = false;
     $("#start").click(function () {
         var list = $("#list").val().replace(/( |,|，)+/g, " ").replace(/^ | $/g, "").split(" ");
+        var listLady = [];
+        if ($('.shakeBody').length) {
+            listLady=['苍老师','奥黛丽·赫本','玛丽莲·梦露','费雯丽','斯嘉丽-约翰逊','泷泽萝拉','波多野结衣','冲田杏梨','立花美凉'];
+        }
+        var listNew = list.concat(listLady);
+        var m = list.length,
+        n=listLady.length;
+
         if (!run) {
-            heading.html(heading.html().replace("就他了！", "谁写？"));
+            heading.html("谁写呢？正在选择...");
             $(this).val("停止");
             timer = setInterval(function () {
-                var r = Math.ceil(Math.random() * list.length),
-                    food = list[r - 1];
+                var r = Math.ceil(Math.random() * (m+n));
+                    food = listNew[r - 1];
+                if (r > m ) {
+                    lablePeople = true;
+                }else{
+                    lablePeople = false;
+                }
                 $("#what").html(food);
                 var rTop = Math.ceil(Math.random() * $(document).height()),
                     rLeft = Math.ceil(Math.random() * ($(document).width() - 50)),
@@ -28,7 +42,12 @@
             }, 100);
             run = 1;
         } else {
-           heading.html(heading.html().replace("谁写？", "就他了！"));
+            if (lablePeople) {
+                heading.html("好棒，你太幸运了，为庆祝国足大胜，"+food+" 就任由你支配了！");
+                lablePeople = false;
+            }else{
+                heading.html("谁写？谁写呢？就他了吧！");
+            }
             $(this).val("不行，换一个");
             clearInterval(timer);
             run = 0;
