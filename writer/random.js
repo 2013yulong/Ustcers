@@ -8,7 +8,7 @@
         var list = $("#list").val().replace(/( |,|，)+/g, " ").replace(/^ | $/g, "").split(" ");
         var listLady = [];
         if ($('.shakeBody').length) {
-            listLady=['苍老师','奥黛丽·赫本','玛丽莲·梦露','费雯丽','斯嘉丽-约翰逊','泷泽萝拉','波多野结衣','冲田杏梨','立花美凉'];
+            listLady=['苍老师','奥黛丽·赫本','玛丽莲·梦露','费雯丽','斯嘉丽-约翰逊','泷泽萝拉','波多野结衣','冲田杏梨','立花美凉','范冰冰'];
         }
         var listNew = list.concat(listLady);
         var m = list.length,
@@ -43,7 +43,7 @@
             run = 1;
         } else {
             if (lablePeople) {
-                heading.html("好棒，你太幸运了，<b>为庆祝国足大胜，</b>"+food+" 就任由你支配了！");
+                heading.html(food+"！她会写战报么？那好吧，<b>为庆祝国足大胜，</b>"+food+" 下次你踢球，就让她给你当啦啦队了！");
                 lablePeople = false;
             }else{
                 heading.html("谁写？谁写呢？就他了吧！");
