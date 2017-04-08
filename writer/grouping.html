@@ -20,13 +20,19 @@
                 color: rgba(3, 119, 3, 0.729412);
                 background: rgba(67, 245, 9, 0.0980392);
             }
+            .group-result {
+                background: #c4dcf9;
+                padding: 10px;
+                margin-top: 10px;
+                border-radius: 5px;
+            }
         </style>
             <script src="js/jquery-1.6.4.min.js"></script>
     </head>
     
     <body>
     <div class="grouping">
-    	<h2>中国科大北京校友队分组器</h2>
+    	<h2>中国科大北京校友队内部比赛分组器</h2>
     	<h3>此次报名人员编号如下：</h3>
     	<div class="group-all">1崔连喜，2单列，3唐凯，4刘仲熙，5董为，6沈春华，7庄宏，8周旭，9李杰，10解锐，11唐海东，12许征，13彭力强，14陆强，15沈烁，16周立刚，17白强，18李匡正，19陆凌炜，20蔡延安，21方海，22贾御龙</div>
     </div>
@@ -38,7 +44,7 @@
         var randomGroup = function(){
         	times++;
             // $('.group-result').append('第'+times+'种分组方法<br>');
-        	$('.group-result').append('<br>每人只能分组一次，您为球队此次比赛分组如下：<br>');
+        	$('.group-result').append('每人只能分组一次，您为球队此次内部比赛进行的随即分组如下：<br>');
             var arr = create_group(22, 2);
             function create_group(num, group_num) {
                 var group = new Array();
@@ -68,7 +74,7 @@
                 table.appendChild(tr);
             }
             $('.group-result').append(table);
-            $('.group-result').append('<br><br>');
+            $('.group-result').append('<br>');
             $('#start-group').remove();
         }
         </script>
