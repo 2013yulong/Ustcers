@@ -37,14 +37,14 @@
     	<div class="group-all">1崔连喜，2单列，3唐凯，4刘仲熙，5董为，6沈春华，7庄宏，8周旭，9李杰，10解锐，11唐海东，12许征，13彭力强，14陆强，15沈烁，16周立刚，17白强，18李匡正，19陆凌炜，20蔡延安，21方海，22贾御龙</div>
     </div>
     <div id="start-group" onclick="randomGroup()" >我来随机分</div>
-    <div class="group-result"></div>
+    <div class="group-result">每人只能分组一次</div>
         <script type="text/javascript">
         var times = 0;
         var list = $(".group-all").html().replace(/( |,|，)+/g, " ").replace(/^ | $/g, "").split(" ");
         var randomGroup = function(){
         	times++;
             // $('.group-result').append('第'+times+'种分组方法<br>');
-        	$('.group-result').append('每人只能分组一次，您为球队此次内部比赛进行的随即分组如下：<br>');
+        	$('.group-result').append('<br>您为球队此次内部比赛进行的随即分组如下：<br>');
             var arr = create_group(22, 2);
             function create_group(num, group_num) {
                 var group = new Array();
