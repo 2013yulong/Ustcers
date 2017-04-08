@@ -2,7 +2,9 @@ html {
     overflow: hidden;
     height: 100%;
 }
-
+[target="_blank"]{
+    display: none;
+}
 body {
     position: relative;
     overflow: hidden;

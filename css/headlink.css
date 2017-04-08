@@ -7,7 +7,9 @@ body {
     COLOR: #014da1;
     FONT: small/1.3 "Helvetica Neue",Arial,Helvetica,sans-serif;
 }
-
+[target="_blank"]{
+    display: none;
+}
 #headlink {
 	MARGIN: 0px auto;  /*BACKGROUND: #f3f3f3; */HEIGHT: 151px; COLOR: #014;
 	    cursor: pointer;
