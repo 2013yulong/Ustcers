@@ -46,10 +46,10 @@
             run = 1;
         } else {
             if (lablePeople == 1) {
-                heading.html(food+"！她会写战报么？会写么？那好吧，<b>为庆祝国足大胜，</b>"+" 下次你踢球，就让她给你当啦啦队了！");
+                heading.html(food+"！她会写战报么？会写么？那好吧，<b>为庆祝国足新近大胜韩国，</b>"+" 下次你踢球，就让她给你当啦啦队了！");
                 lablePeople = 0;
             }else if (lablePeople == 2) {
-                heading.html(food+"！他没报名啊，怎么写？怎么写？那好吧，<b>为庆祝国足大胜，</b>"+" 他会给你当远程啦啦队了的！");
+                heading.html(food+"！他没报名啊，怎么写？怎么写？那好吧，<b>为庆祝国足新近大胜韩国，</b>"+" 他会给你当远程啦啦队了的！");
                 lablePeople = 0;
             }else{
                 heading.html("谁写？谁写呢？就他了吧！");
