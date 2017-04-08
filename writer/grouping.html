@@ -6,7 +6,7 @@
         <title>USTC北京队比赛分组</title>
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
         <style type="text/css">
-            table,td{ border: 1px solid #888; } td{ width: 200px; height: 30px; }
+            table,td{ border: 1px solid #888; } td{ width: 200px; height: 30px; max-width: 22px;}
             #start-group {
                 /*width: 100px;*/
                 height: 30px;
@@ -58,7 +58,7 @@
         var randomGroup = function(){
         	times++;
             // $('.group-result').append('第'+times+'种分组方法<br>');
-        	$('.group-result').append('<br>您为球队此次内部比赛进行的随即分组如下：<br>');
+        	$('.group-result').append('<br>您为球队此次内部比赛进行的随即分组如下：<br><br>');
             var arr = create_group(22, 2);
             function create_group(num, group_num) {
                 var group = new Array();
