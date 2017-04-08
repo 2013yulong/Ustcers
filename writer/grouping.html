@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>ustcerBeiJing分组</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <style type="text/css">
+            table,td{ border: 1px solid #888; } td{ width: 200px; height: 30px; }
+            #start-group {
+                /*width: 100px;*/
+                height: 30px;
+                line-height: 30px;
+                margin: 10px;
+                border-radius: 3px;
+                text-align: center;
+                vertical-align: middle;
+                font-family: 微软雅黑;
+                cursor: pointer;
+                color: rgba(3, 119, 3, 0.729412);
+                background: rgba(67, 245, 9, 0.0980392);
+            }
+        </style>
+            <script src="js/jquery-1.6.4.min.js"></script>
+    </head>
+    
+    <body>
+    <div class="grouping">
+    	<h1>比赛随即分组</h2>
+    	<h3>报名人员名单编号如下：</h3>
+    	<div class="group-all">1崔连喜，2单列，3唐凯，4刘仲熙，5董为，6沈春华，7庄宏，8周旭，9李杰，10解锐，11唐海东，12许征，13彭力强，14陆强，15沈烁，16周立刚，17白强，18李匡正，19陆凌炜，20蔡延安，21方海，22贾御龙</div>
+    </div>
+    <div id="start-group" onclick="randomGroup()" >我来分组</div>
+    <div class="group-result"></div>
+        <script type="text/javascript">
+        var times = 0;
+        var randomGroup = function(){
+        	times++;
+        	$('.group-result').append('第'+times+'种分组方法<br>');
+            var arr = create_group(22, 2);
+            function create_group(num, group_num) {
+                var group = new Array();
+                var check_arr = new Array();
+                for (var i = 0; i < group_num; i++) {
+                    var arr1 = new Array();
+                    for (var j = 0; j < num / group_num; j++) {
+                        var value = Math.ceil(Math.random(0, num) * num);
+                        while (check_arr.indexOf(value) != -1) {
+                            value = Math.ceil(Math.random(0, num) * num);
+                        }
+                        check_arr.push(value);
+                        arr1.push(value);
+                    }
+                    group.push(arr1);
+                }
+                return group;
+            }
+            var table = document.createElement('table');
+            for (var i = 0; i < arr.length; i++) {
+                var tr = document.createElement('tr');
+                for (var j = 0; j < arr[i].length; j++) {
+                    var td = document.createElement('td');
+                    td.innerText = arr[i][j];
+                    tr.appendChild(td);
+                }
+                table.appendChild(tr);
+            }
+            $('.group-result').append(table);
+            $('.group-result').append('<br><br>');
+        }
+        </script>
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261570930'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261570930' type='text/javascript'%3E%3C/scsript%3E"));</script>
+    </body>
+
+</html>

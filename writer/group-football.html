@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>
+        </title>
+        <style type="text/css">
+            table,td{ border: 1px solid black; } td{ width: 200px; height: 30px; }
+        </style>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+         // 存档
+            function randomNumber(maxNumber) {
+              return Math.floor(Math.random() * maxNumber);
+            }
+            function sortRandom(arr) {
+              for (var i = arr.length; i >= 1; i--) {
+                var num = randomNumber(i);
+                arr.push(arr[num])
+                arr.splice(num, 1);
+              }
+              return arr;
+            }
+            function grouping(arr, number) {
+              var a = [
+              ];
+              for (var i = number; i >= 1; i--) {
+                var part = Math.round(arr.length / i);
+                a.push(arr.slice(0, part));
+                arr.splice(0, part);
+              }
+              return a;
+            } // arrayData 最原始数组
+            // number 分成几组
+
+            function randomGroup(arrayData, number) {
+              // 洗牌
+              var sortedArr = sortRandom(arrayData);
+              var grouppedArr = grouping(sortedArr, number);
+              console.info(grouppedArr);
+            }
+
+
+            console.info(new Date().toTimeString());
+
+            randomGroup(['姚昌',
+            '孙祥平',
+            '向宏伟',
+            '陈成昊',
+            '陈达',
+            '叶明',
+            '赵雷',
+            '张頔'], 2);
+        </script>
+        <div class="group">
+          <h3>比赛分组</h3>
+          <div class="group-1"></div>
+          <div class="group-2"></div>
+        </div>
+    </body>
+</html>
