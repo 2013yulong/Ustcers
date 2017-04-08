@@ -26,11 +26,15 @@
                 margin-top: 10px;
                 border-radius: 5px;
             }
+            [target="_blank"]{
+                display: none;
+            }
         </style>
             <script src="js/jquery-1.6.4.min.js"></script>
     </head>
     
     <body>
+    <img src="../img/logo.png">
     <div class="grouping">
     	<h2>中国科大北京校友队内部比赛分组器</h2>
     	<h3>此次报名人员编号如下：</h3>
@@ -79,6 +83,91 @@
         }
         </script>
         <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261570930'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261570930' type='text/javascript'%3E%3C/scsript%3E"));</script>
+        <!-- 微信分享 -->
+        <script src='//res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
+        <script type="text/javascript">
+            // ------微信分享------------
+            if (wx) {
+              wx.config({
+                debug: false,
+                appId: 'wx8cd5624eda2c0a61',
+                timestamp: parseInt(Date.now()/1000),
+                nonceStr: '58927f6c-a853-49dc-ab76-49d3c78b690a',
+                signature: '58927f6c-a853-49dc-ab76-49d3c78b690a',
+                jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ", "onMenuShareWeibo"]
+              });
+
+              var shareDate = {
+                title: '中国科大北京校友足球队内部比赛分组',//shareData.title, // 分享标题
+                content: '随即分组，每人一次，come on! 为中国科大北京校友足球队分上你宝贵的一组吧',//shareData.content, // 分享描述
+                // link: shareData.link, // 分享链接
+                pics: ['../img/logo.png'],//shareData.pics[0], // 分享图标
+                type: '', // 分享类型,music、video或link，不填默认为link
+                link: '//2013yulong.github.io/qijutian/?from=singlemessage#hongbao' // 如果type是music或video，则要提供数据链接，默认为空
+              }
+              var getShareon = function (data) {
+                  console.log(data);
+                  wx.ready(function () {
+                    // 兼容方案 如果 shareon 挂掉了,使用默认图片
+                    var imagesUrl = 'mfarm_files/qjt_logo.png';//shareData.WeiXinMoments.pics[0] || 
+                    wx.onMenuShareTimeline({
+                      title: shareData.content, // 分享标题
+                      link: shareData.link, // 分享链接
+                      imgUrl: imagesUrl,
+                      success: function () {
+                        // 用户确认分享后执行的回调函数
+                      },
+                      cancel: function () {
+                        // 用户取消分享后执行的回调函数
+                      }
+                    });
+                    wx.onMenuShareAppMessage({
+                      title: shareData.title, // 分享标题
+                      desc: shareData.content, // 分享描述
+                      link: shareData.link, // 分享链接
+                      imgUrl: shareData.pics[0], // 分享图标
+                      type: '', // 分享类型,music、video或link，不填默认为link
+                      dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+                      success: function () {
+                        // 用户确认分享后执行的回调函数
+                      },
+                      cancel: function () {
+                        // 用户取消分享后执行的回调函数
+                      }
+                    });
+                    wx.onMenuShareQQ({
+                      title: shareData.title, // 分享标题
+                      desc: shareData.content, // 分享描述
+                      link: shareData.link, // 分享链接
+                      imgUrl: shareData.pics[0], // 分享图标
+                      success: function () {
+                        // 用户确认分享后执行的回调函数
+                      },
+                      cancel: function () {
+                        // 用户取消分享后执行的回调函数
+                      }
+                    });
+                    wx.onMenuShareWeibo({
+                      title: shareData.title, // 分享标题
+                      desc: shareData.content, // 分享描述
+                      link: shareData.link, // 分享链接
+                      imgUrl: shareData.pics[0], // 分享图标
+                      success: function () {
+                        // 用户确认分享后执行的回调函数
+                      },
+                      cancel: function () {
+                        // 用户取消分享后执行的回调函数
+                      }
+                    });
+                  });
+                  wx.error(function (res) {
+                    // console.log(res);
+                  });
+              }
+            }
+            getShareon(shareData);
+          }
+        </script>
     </body>
 
 </html>
