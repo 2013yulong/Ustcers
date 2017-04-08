@@ -8,7 +8,7 @@
         var list = $("#list").val().replace(/( |,|，)+/g, " ").replace(/^ | $/g, "").split(" ");
         var listLady = [];
         if ($('.shakeBody').length) {
-            listLady=['贾御龙','苍老师','奥黛丽·赫本','玛丽莲·梦露','费雯丽','斯嘉丽-约翰逊','泷泽萝拉','波多野结衣','冲田杏梨','立花美凉','范冰冰'];
+            listLady=['苏州刘教授','苍老师','奥黛丽·赫本','玛丽莲·梦露','费雯丽','斯嘉丽-约翰逊','泷泽萝拉','波多野结衣','冲田杏梨','立花美凉','范冰冰'];
         }
         var listNew = list.concat(listLady);
         var m = list.length,
