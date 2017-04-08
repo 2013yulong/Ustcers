@@ -37,7 +37,8 @@
         var list = $(".group-all").html().replace(/( |,|，)+/g, " ").replace(/^ | $/g, "").split(" ");
         var randomGroup = function(){
         	times++;
-        	$('.group-result').append('第'+times+'种分组方法<br>');
+            // $('.group-result').append('第'+times+'种分组方法<br>');
+        	$('.group-result').append('<br>每人只能分组一次，您为球队此次比赛分组如下：<br>');
             var arr = create_group(22, 2);
             function create_group(num, group_num) {
                 var group = new Array();
@@ -68,6 +69,7 @@
             }
             $('.group-result').append(table);
             $('.group-result').append('<br><br>');
+            $('#start-group').remove();
         }
         </script>
         <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261570930'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261570930' type='text/javascript'%3E%3C/scsript%3E"));</script>
