@@ -1,0 +1,74 @@
+<html>  
+<head>  
+<script src="http://webapi.openspeech.cn/socket.io/socket.io.js"></script>  
+<script src='http://webapi.openspeech.cn/fingerprint.js'></script>  
+<script src="http://webapi.openspeech.cn/tts.min.js"></script>  
+</head>  
+<body>  
+           <div id="voice">  
+                <input  type="button" onclick="playVoice('今天天气不错，一起去海边烧烤怎么样！');" value="play今天天气不错，一起去海边烧烤怎么样！" />  
+  
+       </div>  
+  <script type="text/javascript">  
+    //初始化Session对象  
+    var session = new IFlyTtsSession({  
+                  'url' : 'http://webapi.openspeech.cn/',                             
+                  'interval' : '30000',   
+                  'disconnect_hint' : 'disconnect',  
+                  'sub' : 'tts'  
+            });  
+    var audio = null;  
+    //输入文本，输出语音播放链接 @content 待合成文本(不超过4096字节)  
+    function play(content) {  
+        resetVoice();  
+        var appid = "你的appid";//应用APPID，在open.voicecloud.cn上申请即可获得  
+        var timestamp = new Date().toLocaleTimeString();//当前时间戳，例new Date().toLocaleTimeString()  
+            var expires = 60000;//签名失效时间，单位:ms，例60000     
+        var vcn="vixr";//发音人，具体可参考官网的api  
+        //secretkey在open.voicecloud.cn上申请即可获得  
+        var signature = faultylabs.MD5(appid + '&' + timestamp + '&' + expires + '&' + "你的secretkey");        
+        var params = { "params" : "aue = speex-wb;7, ent = intp65, spd = 50, vol = 50, tte = utf8, caller.appid=" + appid + ",timestamp=" + timestamp + ",expires=60000,vcn="+vcn, "signature" : signature, "gat" : "mp3"};   
+        session.start(params, content, function (err, obj)  
+    {  
+            if(err) {  
+                alert("语音合成发生错误，错误代码 ：" + err);  
+            } else {  
+            if(audio != null)  
+                {  
+                    audio.pause();  
+                }  
+                audio = new Audio();  
+                audio.src = '';  
+        audio.play();  
+                audio.src = "http://webapi.openspeech.cn/" + obj.audio_url;  
+                audio.play();  
+            }  
+        },function(message){  
+             //语音合成结束启动下一次合成  
+         if(message=="onEnd"){  
+             console.log("本次会话结束!");  
+                 audio=new Audio();  
+         }  
+          
+        });  
+    };  
+    function playVoice(str){  
+         play(str);  
+    }  
+     //停止播放音频  
+     function stopVoice(){  
+          if(audio!=null){  
+         audio.state=2;  
+         audio.pause();  
+          }  
+     }  
+     //重置音频缓存队列和播放对象，若音频正在播放，则暂停当前播放对象，创建并使用新的播放对象                                
+     function resetVoice(){  
+          if(audio!=null){  
+         audio.pause();  
+          }  
+          audio=new Audio();  
+     }  
+</script>  
+</body>  
+</html>  
