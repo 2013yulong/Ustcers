@@ -1,5 +1,5 @@
 //--js
 $('#headlink').click(function(){
-	location.href = '/';
+	location.href = '/Ustcers';
 	console.log('gogo');
 })
