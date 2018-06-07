@@ -108,6 +108,9 @@ marquee{
 #logopart span{
 	font-size: 32px;
 	display: inline-block;
+  @media screen and (max-width: 480px){
+    font-size: 15px;
+  }
 }
 
 /*-----bg----*/
