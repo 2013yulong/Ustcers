@@ -130,7 +130,7 @@ marquee{
 	display: inline-block;
 }
 #menupart {
-	MARGIN: 0px auto; WIDTH: 1120px; BACKGROUND: url(http://en.ustc.edu.cn/images/menubg20131.png) repeat-x; HEIGHT: 58px
+	MARGIN: 0px BACKGROUND: url(http://en.ustc.edu.cn/images/menubg20131.png) repeat-x; HEIGHT: 58px
 }
 #menupart .menuNav {
 	Z-INDEX: 1000; POSITION: relative; TEXT-ALIGN: left; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px auto; PADDING-LEFT: 0px; WIDTH: 1120px; PADDING-RIGHT: 0px; FLOAT: none; FONT-SIZE: 100%; FONT-WEIGHT: bold; PADDING-TOP: 0px
