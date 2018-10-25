@@ -614,7 +614,17 @@
  }
  
       $('#nav .list').shake();
-      $('.play-football a').shake();</script>
+      $('.play-football a').shake();
+  </script>
+  <script type="text/javascript">
+    var script = document.createElement ("script"); 
+    script.type = "text/javascript"; 
+    script.async = true;
+    script.crossorigin="anonymous";
+    script.src = "//browser.sentry-cdn.com/4.2.1/bundle.min.js";  
+    document.body.appendChild(script); 
+    Sentry.init({ dsn: 'https://fc0c41d51b6c48d29f58d967d1e96d3b@sentry.io/1308787' });
+  </script>
   </body>
 
 </html>
