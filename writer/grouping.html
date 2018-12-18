@@ -48,7 +48,7 @@
     <h2 class="head-title">中国科大北京校友队2018年会比赛分组器</h2>
     <div class="grouping">
     	<h3>此次报名人员编号如下：</h3>
-    	<div class="group-all">1老周，2董为，3沈春华，4周旭，5唐凯，6王佳欣，7刘仲熙，8李匡正，9刘铮，10吴君宜，11王军，12张英华，13杜博遥，14林骋，15王丰，16老刘，17司令，18贾御龙，19沈烁，20吕计男，21程鹏，22陆强，23王腾，24彭力强，25卢云鹏，26温良剑，27董震，28硕哥，29陆凌炜，30崔连喜，31贾彬，32刘涛，33钱燚，34庄宏，35 周显昌，36刘明哲，37刘炜清，38老陈，39张朴，40郑学忠
+    	<div class="group-all">1老周，2董为，3沈春华，4周旭，5唐凯，6王佳欣，7刘仲熙，8李匡正，9刘铮，10吴君宜，11王军，12张英华，13杜博遥，14林骋，15王丰，16老刘，17司令，18贾御龙，19沈烁，20吕计男，21程鹏，22陆强，23王腾，24彭力强，25卢云鹏，26温良剑，27董震，28硕哥，29陆凌炜，30崔连喜，31贾彬，32刘涛，33钱燚，34庄宏，35周显昌，36刘明哲，37刘炜清，38老陈，39张朴，40郑学忠
 </div>
     </div>
     <div id="start-group" onclick="randomGroup()" >我来随机分</div>
@@ -60,7 +60,7 @@
         	times++;
             // $('.group-result').append('第'+times+'种分组方法<br>');
         	$('.group-result').append('<br>您为球队此次内部比赛进行的随即分组如下：<br><br>');
-            var arr = create_group(list.length, 2);
+            var arr = create_group(40, 2);
             function create_group(num, group_num) {
                 var group = new Array();
                 var check_arr = new Array();
@@ -96,89 +96,7 @@
         <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261570930'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261570930' type='text/javascript'%3E%3C/scsript%3E"));</script>
         <!-- 微信分享 -->
         <script src='//res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
-        <script type="text/javascript">
-            // ------微信分享------------
-            if (wx) {
-              wx.config({
-                debug: false,
-                appId: 'wx8cd5624eda2c0a61',
-                timestamp: parseInt(Date.now()/1000),
-                nonceStr: '58927f6c-a853-49dc-ab76-49d3c78b690a',
-                signature: '58927f6c-a853-49dc-ab76-49d3c78b690a',
-                jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ", "onMenuShareWeibo"]
-              });
 
-              var shareDate = {
-                title: '中国科大北京校友足球队内部比赛分组',//shareData.title, // 分享标题
-                content: '随即分组，每人一次，come on! 为中国科大北京校友足球队分上你宝贵的一组吧',//shareData.content, // 分享描述
-                // link: shareData.link, // 分享链接
-                pics: ['../img/logo.png'],//shareData.pics[0], // 分享图标
-                type: '', // 分享类型,music、video或link，不填默认为link
-                link: '//2013yulong.github.io/qijutian/?from=singlemessage#hongbao' // 如果type是music或video，则要提供数据链接，默认为空
-              }
-              var getShareon = function (data) {
-                  console.log(data);
-                  wx.ready(function () {
-                    // 兼容方案 如果 shareon 挂掉了,使用默认图片
-                    var imagesUrl = 'mfarm_files/qjt_logo.png';//shareData.WeiXinMoments.pics[0] || 
-                    wx.onMenuShareTimeline({
-                      title: shareData.content, // 分享标题
-                      link: shareData.link, // 分享链接
-                      imgUrl: imagesUrl,
-                      success: function () {
-                        // 用户确认分享后执行的回调函数
-                      },
-                      cancel: function () {
-                        // 用户取消分享后执行的回调函数
-                      }
-                    });
-                    wx.onMenuShareAppMessage({
-                      title: shareData.title, // 分享标题
-                      desc: shareData.content, // 分享描述
-                      link: shareData.link, // 分享链接
-                      imgUrl: shareData.pics[0], // 分享图标
-                      type: '', // 分享类型,music、video或link，不填默认为link
-                      dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
-                      success: function () {
-                        // 用户确认分享后执行的回调函数
-                      },
-                      cancel: function () {
-                        // 用户取消分享后执行的回调函数
-                      }
-                    });
-                    wx.onMenuShareQQ({
-                      title: shareData.title, // 分享标题
-                      desc: shareData.content, // 分享描述
-                      link: shareData.link, // 分享链接
-                      imgUrl: shareData.pics[0], // 分享图标
-                      success: function () {
-                        // 用户确认分享后执行的回调函数
-                      },
-                      cancel: function () {
-                        // 用户取消分享后执行的回调函数
-                      }
-                    });
-                    wx.onMenuShareWeibo({
-                      title: shareData.title, // 分享标题
-                      desc: shareData.content, // 分享描述
-                      link: shareData.link, // 分享链接
-                      imgUrl: shareData.pics[0], // 分享图标
-                      success: function () {
-                        // 用户确认分享后执行的回调函数
-                      },
-                      cancel: function () {
-                        // 用户取消分享后执行的回调函数
-                      }
-                    });
-                  });
-                  wx.error(function (res) {
-                    // console.log(res);
-                  });
-              }
-            }
-            getShareon(shareData);
-          }
-        </script>
     </body>
 
 </html>
