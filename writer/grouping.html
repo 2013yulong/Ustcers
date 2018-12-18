@@ -60,7 +60,7 @@
         	times++;
             // $('.group-result').append('第'+times+'种分组方法<br>');
         	$('.group-result').append('<br>您为球队此次内部比赛进行的随即分组如下：<br><br>');
-            var arr = create_group(20, 2);
+            var arr = create_group(list.length, 2);
             function create_group(num, group_num) {
                 var group = new Array();
                 var check_arr = new Array();
