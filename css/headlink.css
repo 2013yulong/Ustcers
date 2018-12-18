@@ -11,11 +11,12 @@ body {
     display: none;
 }
 #headlink {
-	MARGIN: 0px auto;  /*BACKGROUND: #f3f3f3; */HEIGHT: 151px; COLOR: #014;
+	MARGIN: 0px auto;  /*BACKGROUND: #f3f3f3; */
+  COLOR: #014;
 	    cursor: pointer;
 }
 #headlink .timedate {
-	MARGIN-TOP: -60px; WIDTH: 200px; FLOAT: right
+	WIDTH: 200px; FLOAT: right
 }
 .timedate {
 	TEXT-ALIGN: left; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: right; FONT-SIZE: 90%; FONT-WEIGHT: bold
